@@ -1,0 +1,26 @@
+.loginSection {
+  padding: 200px 0px;
+}
+
+.loginForm {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.loginLabel {
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  flex-direction: column;
+}
+.loaderWrap {
+  position: fixed;
+  top: 50%;
+  z-index: 999;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

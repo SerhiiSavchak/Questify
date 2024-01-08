@@ -1,4 +1,4 @@
-import "./Header.css";
+import "./Header.scss";
 import { HeaderProps } from "../../types/types";
 
 export const Header = ({ children }: HeaderProps) => {
