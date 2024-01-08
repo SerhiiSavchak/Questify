@@ -11,11 +11,11 @@ import "./App.scss";
 const router = createBrowserRouter(
   [
     {
-      path: "/questify",
+      path: "/",
       element: <Layout />,
       children: [
         {
-          path: "/",
+          index: true,
           element: <Home />,
         },
         {
