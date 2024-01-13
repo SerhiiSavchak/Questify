@@ -1,0 +1,47 @@
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  color: #00d7ff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.36px;
+  margin-right: auto;
+}
+
+.header-user-wrap {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3e4e6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+.header-user-text {
+  color: white;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0.34px;
+}
+
+.header-challenge-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+}
+
+.header-logout-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+.header-logout-icon {
+  width: 22px;
+  height: 16px;
+}

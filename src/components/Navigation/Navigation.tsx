@@ -1,13 +1,22 @@
 import "./Navigation.scss";
-import { Link } from "react-router-dom";
+import sprite from "../../images/icons/sprite.svg";
 
 export const Navigation = () => {
   return (
-    <nav style={{ backgroundColor: "black" }}>
-      <Link to="/login">login</Link>
-      <Link to="/register">register</Link>
-      <Link to="/">home</Link>
-      <Link to="/dashboard">dashboard</Link>
+    <nav className="header-nav">
+      <a className="header-logo">Questify</a>
+      <div className="header-user-wrap">
+        <p className="header-user-text">J</p>
+      </div>
+
+      <svg className="header-challenge-icon">
+        <use href={sprite + "#icon-challenge"}></use>
+      </svg>
+      <button className="header-logout-btn">
+        <svg className="header-logout-icon">
+          <use href={sprite + "#icon-logout"}></use>
+        </svg>
+      </button>
     </nav>
   );
 };
