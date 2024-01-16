@@ -4,23 +4,29 @@
 }
 
 .header-logo {
-  color: #00d7ff;
+  cursor: pointer;
+  color: var(--main-blue);
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.36px;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    font-size: 21px;
+  }
 }
 
 .header-user-wrap {
+  cursor: pointer;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #3e4e6c;
+  background-color: var(--second-bg-black);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 12px;
 }
+
 .header-user-text {
   color: white;
   font-size: 17px;
@@ -28,20 +34,47 @@
   letter-spacing: 0.34px;
 }
 
+.header-user-text-tablet {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    color: var(--gray-second);
+    font-size: 17px;
+    letter-spacing: 0.34px;
+    margin-right: 170px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: auto;
+  }
+}
+
+.header-challenge-btn {
+  margin-right: 12px;
+  @media screen and (min-width: 768px) {
+    margin-right: 40px;
+  }
+}
+
 .header-challenge-icon {
   width: 30px;
   height: 30px;
-  margin-right: 12px;
 }
 
-.header-logout-btn {
+.header-logout-btn,
+.header-challenge-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
   border: none;
 }
+
 .header-logout-icon {
   width: 22px;
   height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1280px) {
 }

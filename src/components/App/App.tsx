@@ -18,19 +18,23 @@ const router = createBrowserRouter(
           index: true,
           element: <Home />,
         },
-        {
-          path: "/register",
-          element: (
-            <PublicRoute component={Register} redirectedTo="/dashboard" />
-          ),
-        },
-        {
-          path: "/login",
-          element: <PublicRoute component={Login} redirectedTo="/dashboard" />,
-        },
+        //   {
+        //     path: "/register",
+        //     element: (
+        //       <PublicRoute component={Register} redirectedTo="/dashboard" />
+        //     ),
+        //   },
+        //   {
+        //     path: "/login",
+        //     element: <PublicRoute component={Login} redirectedTo="/dashboard" />,
+        //   },
+        //   {
+        //     path: "/dashboard",
+        //     element: <PrivateRoute component={Dashboard} redirectedTo="/login" />,
+        //   },
         {
           path: "/dashboard",
-          element: <PrivateRoute component={Dashboard} redirectedTo="/login" />,
+          element: <Dashboard />,
         },
       ],
     },

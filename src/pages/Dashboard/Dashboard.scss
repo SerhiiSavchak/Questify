@@ -1,0 +1,115 @@
+.dashboard-section {
+  padding: 28px 0px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+.dashboard-today-wrap {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  @media screen and (min-width: 768px) {
+    margin: unset;
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.dashboard-today-list {
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.dashboard-today-title,
+.dashboard-tomorrow-title,
+.dashboard-done-title {
+  color: var(--main-black);
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  margin-bottom: 18px;
+  width: fit-content;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.dashboard-today-list,
+.dashboard-tomorrow-list,
+.dashboard-done-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 18px 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 18px 32px;
+  }
+}
+
+.dashboard-tomorrow-wrap {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  @media screen and (min-width: 768px) {
+    margin: unset;
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.dashboard-tomorrow-list {
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+.dashboard-done-wrap {
+  width: fit-content;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    margin: unset;
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.dashboard-done-list {
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+.dashboard-add-btn {
+  position: fixed;
+  bottom: 33px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+.dashboard-add-icon {
+  width: 52px;
+  height: 52px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
