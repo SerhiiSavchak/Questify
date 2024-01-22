@@ -7,6 +7,7 @@ import { getUserError, getUserIsLoading } from "../../redux/selectors";
 import { useSelector } from "react-redux";
 import { TailSpin } from "react-loader-spinner";
 import { Notify } from "notiflix/build/notiflix-notify-aio";
+import { LoginForm } from "../../components/LoginForm/LoginForm";
 
 function Login() {
   //   const dispatch = useDispatch();
@@ -45,7 +46,17 @@ function Login() {
   //     }
   //   };
 
-  return <></>;
+  return (
+    <section className="login-section">
+      <Container>
+        <>
+          <p className="login-title">Questify</p>
+          <p className="login-subtitle">Sign in</p>
+          <LoginForm />
+        </>
+      </Container>
+    </section>
+  );
   // 	(
   //     <>
   //       {isLoading && !error && (

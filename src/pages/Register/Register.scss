@@ -1,52 +1,78 @@
-.registerSection {
-  padding: 200px 0px;
+.register-section {
+  padding-top: 80px;
+  padding-bottom: 143px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
 }
-
-.registerForm {
-  display: flex;
-  width: 300px;
-  flex-direction: column;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.registerLabel {
-  display: flex;
-  font-weight: 500;
-  font-size: 18px;
-  flex-direction: column;
-}
-.registerRadioTitle {
-  display: block;
-  margin: 0 auto;
-  font-weight: 500;
-  font-size: 18px;
+.register-title {
+  color: var(--main-blue);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  margin-bottom: 60px;
   width: fit-content;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    margin-bottom: 80px;
+  }
+}
+.register-text {
+  color: var(--task-bg-black);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 161.1%;
+  letter-spacing: 0.36px;
+  text-align: justify;
+  width: 281px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 137.5%;
+    letter-spacing: 0.48px;
+    width: 375px;
+    margin: unset;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 34px;
+    line-height: 140%;
+    letter-spacing: 0.72px;
+    width: 562px;
+    margin-bottom: 35px;
+  }
+}
+.register-subtitle {
+  color: var(--main-grey);
+  font-size: 20px;
+  letter-spacing: 0.48px;
+  font-weight: 300;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+
+    letter-spacing: 0.36px;
+    margin: unset;
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
 }
 
-.registerRadioWrap {
-  display: flex;
-  gap: 15px;
-}
-.registerLabelRadio {
-  display: flex;
-  gap: 30px;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.registerInputRadio {
-  width: 100%;
-}
-.registerTitle {
-  width: 170px;
-}
-
-.loaderWrap {
-  position: fixed;
-  top: 50%;
-  z-index: 999;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.register-icon {
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
 }

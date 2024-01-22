@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const Navigation = () => {
   return (
     <nav className="header-nav">
-      <Link to="/dashboard" className="header-logo">
+      <Link to="/login" className="header-logo">
         Questify
       </Link>
       <div className="header-user-wrap">

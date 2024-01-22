@@ -3,7 +3,7 @@ import sprite from "../../images/icons/sprite.svg";
 import { useState } from "react";
 
 export const Task = () => {
-  const [test, setTest] = useState(true);
+  const [test, setTest] = useState(false);
 
   return (
     <li className={test ? "task-item challenge" : "task-item"}>

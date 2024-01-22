@@ -1,13 +1,17 @@
 import "./Register.scss";
-import { useState } from "react";
-import { Input, Button } from "@chakra-ui/react";
-import { useDispatch, useSelector } from "react-redux";
-import { register } from "redux/auth/authOperations";
-import { Container } from "components/Layout/Layout";
-import { getUserError, getUserIsLoading } from "redux/selectors";
-import { TailSpin } from "react-loader-spinner";
-import { useEffect } from "react";
-import { Notify } from "notiflix/build/notiflix-notify-aio";
+import { RegisterForm } from "../../components/RegisterForm/RegisterForm";
+import { useState, useEffect } from "react";
+// import { Input, Button } from "@chakra-ui/react";
+// import { useDispatch, useSelector } from "react-redux";
+// import { register } from "redux/auth/authOperations";
+
+// import { getUserError, getUserIsLoading } from "redux/selectors";
+// import { TailSpin } from "react-loader-spinner";
+
+// import { Notify } from "notiflix/build/notiflix-notify-aio";
+
+import sprite from "../../images/icons/sprite.svg";
+import { Container } from "../../components/common/Container/Container";
 
 function Register() {
   //   const dispatch = useDispatch();
@@ -54,7 +58,27 @@ function Register() {
   //     }
   //   };
 
-  return <></>;
+  return (
+    <section className="register-section">
+      <Container>
+        <>
+          <h1 className="register-title">Questify</h1>
+          <p className="register-text">
+            Questify will turn your life into a thrilling game full of amazing
+            quests and exciting challenges.
+          </p>
+          <h2 className="register-subtitle">Sign up</h2>
+          <RegisterForm />
+          {/* <svg className="register-icon">
+        <use href={sprite + "#icon-add"}></use>
+      </svg>
+      <svg className="register-icon">
+        <use href={sprite + "#icon-add"}></use>
+      </svg> */}
+        </>
+      </Container>
+    </section>
+  );
   // 	(
   //     <>
   //       {isLoading && !error && (
